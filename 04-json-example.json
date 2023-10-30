@@ -1,0 +1,119 @@
+[
+    {
+        "name": "John",
+        "age": 30,
+        "address": {
+            "street": "Main St",
+            "city": "Barcelona"
+        },
+        "hobbies": [
+            "reading",
+            "cooking",
+            "coding"
+        ]
+    },
+    {
+        "name": "Bob",
+        "age": 40,
+        "address": {
+            "street": "High St",
+            "city": "London"
+        },
+        "hobbies": [
+            "gardening",
+            "fishing",
+            "traveling"
+        ]
+    },
+    {
+        "name": "Alice",
+        "age": 35,
+        "address": {
+            "street": "Rue de la Paix",
+            "city": "Paris"
+        },
+        "hobbies": [
+            "yoga",
+            "reading",
+            "cooking"
+        ]
+    },
+    {
+        "name": "Mike",
+        "age": 28,
+        "address": {
+            "street": "Queen St",
+            "city": "Toronto"
+        },
+        "hobbies": [
+            "running",
+            "swimming",
+            "biking"
+        ]
+    },
+    {
+        "name": "Sara",
+        "age": 32,
+        "address": {
+            "street": "Gran Via",
+            "city": "Madrid"
+        },
+        "hobbies": [
+            "singing",
+            "dancing",
+            "traveling"
+        ]
+    },
+    {
+        "name": "David",
+        "age": 45,
+        "address": {
+            "street": "Wall St",
+            "city": "New York"
+        },
+        "hobbies": [
+            "investing",
+            "golfing",
+            "reading"
+        ]
+    },
+    {
+        "name": "Emily",
+        "age": 27,
+        "address": {
+            "street": "Collins St",
+            "city": "Melbourne"
+        },
+        "hobbies": [
+            "surfing",
+            "painting",
+            "hiking"
+        ]
+    },
+    {
+        "name": "Tom",
+        "age": 38,
+        "address": {
+            "street": "Nanjing Rd",
+            "city": "Shanghai"
+        },
+        "hobbies": [
+            "photography",
+            "traveling",
+            "cooking"
+        ]
+    },
+    {
+        "name": "Lucy",
+        "age": 29,
+        "address": {
+            "street": "Nathan Rd",
+            "city": "Hong Kong"
+        },
+        "hobbies": [
+            "shopping",
+            "reading",
+            "yoga"
+        ]
+    }
+]

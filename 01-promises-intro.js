@@ -5,12 +5,13 @@ const directions = [
     "* Chipotle Mexican Grill 891 S Miami Ave, Miami"
 ];
 
-function getDirectionsFromTheServer(step) {
+function getDirectionsFromTheServer(step, callback) {
     setTimeout(() => {
         console.log(directions[step]);
-       
+        callback()
     }, Math.floor(Math.random() * 2000))
 }
+
 
 // CALLBACK HELL
 getDirectionsFromTheServer(0, () => {
@@ -26,12 +27,12 @@ getDirectionsFromTheServer(0, () => {
 // Let's create a promise
 let somenthingWentWrong = true;
 
-function myFirstPromise(){
-    return new Promise((resolve, reject)=>{
-        if(somenthingWentWrong){
+function myFirstPromise() {
+    return new Promise((resolve, reject) => {
+        if (somenthingWentWrong) {
             console.error("PROMISE REJECTED");
             return reject("Because I'm lazy I don't want to fulfill the promise")
-        }else if (!somenthingWentWrong){
+        } else if (!somenthingWentWrong) {
             console.log("The promise is resolved")
             return resolve("Yessss")
         }
@@ -50,8 +51,8 @@ function myFirstPromise(){
     }) */
 
 
-    // THIS IS NOT WORKING BECAUSE getDirections is not a promise
-    getDirectionsFromTheServer(0)
-    .then(()=> getDirectionsFromTheServer(1))
-    .then(()=> getDirectionsFromTheServer(2))
-    .then(()=> getDirectionsFromTheServer(3))
+// THIS IS NOT WORKING BECAUSE getDirections is not a promise
+getDirectionsFromTheServer(0)
+    .then(() => getDirectionsFromTheServer(1))
+    .then(() => getDirectionsFromTheServer(2))
+    .then(() => getDirectionsFromTheServer(3))
